@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:list_todo3/brain/const.dart';
 import 'package:list_todo3/view/setting_bottom_sheet_view.dart';
 import 'package:provider/provider.dart';
-
+import 'package:share_plus/share_plus.dart';
 import 'delete_bottom_sheet_view.dart';
 
 class HeaderView extends StatelessWidget {
@@ -73,6 +73,22 @@ class HeaderView extends StatelessWidget {
                   child: SizedBox(
                     height: double.infinity,
                     child: Icon(
+                      Icons.share,
+                      size: 30,
+                      color: viewBrain.clrlvl4,
+                    ),
+                  ),
+                  onTap: () {
+                    viewBrain.createContentsForShare();
+                    Share.share(viewBrain.shareList);
+                  },
+                )),
+            Expanded(
+                flex: 1,
+                child: InkWell(
+                  child: SizedBox(
+                    height: double.infinity,
+                    child: Icon(
                       Icons.settings,
                       size: 30,
                       color: viewBrain.clrlvl4,
@@ -81,6 +97,21 @@ class HeaderView extends StatelessWidget {
                   onTap: () {
                     viewBrain.showBottomSheet(
                         SettingBottomSheetView(), context);
+                  },
+                )),
+            Expanded(
+                flex: 1,
+                child: InkWell(
+                  child: SizedBox(
+                    height: double.infinity,
+                    child: Icon(
+                      Icons.list,
+                      size: 30,
+                      color: viewBrain.clrlvl4,
+                    ),
+                  ),
+                  onTap: () {
+                    list_sort.dart();
                   },
                 )),
           ],
