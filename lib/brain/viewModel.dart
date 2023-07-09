@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:list_todo3/brain/task.dart';
 import 'package:list_todo3/brain/user.dart';
-import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
 class AppViewBrain extends ChangeNotifier {
@@ -14,10 +13,10 @@ class AppViewBrain extends ChangeNotifier {
     return DateFormat.yMMMMEEEEd('ja').format(DateTime.now()).toString();
   }
 
-  Color clrlvl1 = Colors.grey.shade50;
-  Color clrlvl2 = Colors.grey.shade200;
-  Color clrlvl3 = Colors.grey.shade800;
-  Color clrlvl4 = Colors.grey.shade900;
+  Color clrlvl1 = Colors.teal.shade50;
+  Color clrlvl2 = Colors.teal.shade200;
+  Color clrlvl3 = Colors.teal.shade800;
+  Color clrlvl4 = Colors.teal.shade900;
 
   String get username => user.username;
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../brain/const.dart';
+import '../brain/viewModel.dart';
 
 class TaskListView extends StatelessWidget {
   const TaskListView({super.key});
@@ -58,7 +58,7 @@ class TaskListView extends StatelessWidget {
                                 viewBrain.setValue(index, value!);
                               },
                               side: BorderSide(
-                                  width: 2, color: Colors.purple.shade900)),
+                                  width: 2, color: viewBrain.clrlvl3)),
                         ),
                       );
                     })));

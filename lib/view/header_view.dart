@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:list_todo3/brain/const.dart';
+import 'package:list_todo3/brain/viewModel.dart';
 import 'package:list_todo3/view/setting_bottom_sheet_view.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
