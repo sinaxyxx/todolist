@@ -26,8 +26,10 @@ class TaskInfoView extends StatelessWidget {
                       child: FittedBox(
                         child: Text(
                           '${viewBrain.numTasks}',
-                          style:
-                              TextStyle(fontSize: 24, color: viewBrain.clrlvl4),
+                          style: TextStyle(
+                              fontSize: 24,
+                              color: viewBrain.clrlvl4,
+                              fontWeight: FontWeight.w500),
                         ),
                       ),
                     ),
@@ -40,8 +42,9 @@ class TaskInfoView extends StatelessWidget {
                         child: Text(
                           'Total ',
                           style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              color: viewBrain.clrlvl4),
+                            fontWeight: FontWeight.w500,
+                            color: viewBrain.clrlvl4,
+                          ),
                         ),
                       ),
                     ),

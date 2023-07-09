@@ -13,10 +13,10 @@ class AppViewBrain extends ChangeNotifier {
     return DateFormat.yMMMMEEEEd('ja').format(DateTime.now()).toString();
   }
 
-  Color clrlvl1 = Colors.teal.shade50;
-  Color clrlvl2 = Colors.teal.shade200;
-  Color clrlvl3 = Colors.teal.shade800;
-  Color clrlvl4 = Colors.teal.shade900;
+  Color clrlvl1 = Colors.brown.shade50;
+  Color clrlvl2 = Colors.brown.shade100;
+  Color clrlvl3 = Colors.brown.shade400;
+  Color clrlvl4 = Colors.brown.shade800;
 
   String get username => user.username;
 

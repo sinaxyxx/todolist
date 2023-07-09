@@ -10,6 +10,7 @@ class DeleteBottomSheetView extends StatelessWidget {
     return Consumer<AppViewBrain>(
       builder: (context, viewBrain, child) {
         return Container(
+          decoration: BoxDecoration(color: viewBrain.clrlvl1),
           height: 200,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -22,7 +23,7 @@ class DeleteBottomSheetView extends StatelessWidget {
                   child: Text('全削除'),
                   style: ElevatedButton.styleFrom(
                       backgroundColor: viewBrain.clrlvl3,
-                      foregroundColor: viewBrain.clrlvl2)),
+                      foregroundColor: viewBrain.clrlvl1)),
               SizedBox(
                 width: 20,
               ),
@@ -34,7 +35,7 @@ class DeleteBottomSheetView extends StatelessWidget {
                   child: Text('完了済ToDoを全削除'),
                   style: ElevatedButton.styleFrom(
                       backgroundColor: viewBrain.clrlvl3,
-                      foregroundColor: viewBrain.clrlvl2)),
+                      foregroundColor: viewBrain.clrlvl1)),
             ],
           ),
         );
