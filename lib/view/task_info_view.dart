@@ -10,7 +10,7 @@ class TaskInfoView extends StatelessWidget {
     return Consumer<AppViewBrain>(
       builder: (context, viewBrain, child) {
         return Container(
-          margin: EdgeInsets.all(10),
+          margin: EdgeInsets.fromLTRB(16, 10, 16, 10),
           child: Row(children: [
             Expanded(
               flex: 1,
@@ -38,7 +38,7 @@ class TaskInfoView extends StatelessWidget {
                       alignment: Alignment.center,
                       child: FittedBox(
                         child: Text(
-                          'Total Tasks',
+                          'Total ',
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
                               color: viewBrain.clrlvl4),
@@ -78,7 +78,7 @@ class TaskInfoView extends StatelessWidget {
                       alignment: Alignment.center,
                       child: FittedBox(
                         child: Text(
-                          'Remaining',
+                          'のこり',
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
                               color: viewBrain.clrlvl4),

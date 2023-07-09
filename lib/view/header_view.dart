@@ -26,9 +26,9 @@ class HeaderView extends StatelessWidget {
                       child: FittedBox(
                           fit: BoxFit.fitHeight,
                           child: Text(
-                            'Welcome back,',
+                            'おかえり！',
                             style: TextStyle(
-                                fontSize: 24,
+                                fontSize: 18,
                                 color: viewBrain.clrlvl4,
                                 fontWeight: FontWeight.bold),
                           )),
@@ -43,7 +43,7 @@ class HeaderView extends StatelessWidget {
                           child: Text(
                             '${viewBrain.username}',
                             style: TextStyle(
-                                fontSize: 40,
+                                fontSize: 42,
                                 color: viewBrain.clrlvl4,
                                 fontWeight: FontWeight.bold),
                           )),
@@ -58,38 +58,7 @@ class HeaderView extends StatelessWidget {
                   child: SizedBox(
                     height: double.infinity,
                     child: Icon(
-                      Icons.delete,
-                      size: 30,
-                      color: viewBrain.clrlvl4,
-                    ),
-                  ),
-                  onTap: () {
-                    viewBrain.showBottomSheet(DeleteBottomSheetView(), context);
-                  },
-                )),
-            Expanded(
-                flex: 1,
-                child: InkWell(
-                  child: SizedBox(
-                    height: double.infinity,
-                    child: Icon(
-                      Icons.share,
-                      size: 30,
-                      color: viewBrain.clrlvl4,
-                    ),
-                  ),
-                  onTap: () {
-                    viewBrain.createContentsForShare();
-                    Share.share(viewBrain.shareList);
-                  },
-                )),
-            Expanded(
-                flex: 1,
-                child: InkWell(
-                  child: SizedBox(
-                    height: double.infinity,
-                    child: Icon(
-                      Icons.settings,
+                      Icons.account_box,
                       size: 30,
                       color: viewBrain.clrlvl4,
                     ),
@@ -105,12 +74,32 @@ class HeaderView extends StatelessWidget {
                   child: SizedBox(
                     height: double.infinity,
                     child: Icon(
-                      Icons.list,
+                      Icons.share,
                       size: 30,
                       color: viewBrain.clrlvl4,
                     ),
                   ),
-                  onTap: () {},
+                  onTap: () {
+                    if (viewBrain.tasks.isNotEmpty) {
+                      viewBrain.createContentsForShare();
+                      Share.share(viewBrain.shareList);
+                    }
+                  },
+                )),
+            Expanded(
+                flex: 1,
+                child: InkWell(
+                  child: SizedBox(
+                    height: double.infinity,
+                    child: Icon(
+                      Icons.delete,
+                      size: 30,
+                      color: viewBrain.clrlvl4,
+                    ),
+                  ),
+                  onTap: () {
+                    viewBrain.showBottomSheet(DeleteBottomSheetView(), context);
+                  },
                 )),
           ],
         );

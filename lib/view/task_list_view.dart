@@ -41,9 +41,11 @@ class TaskListView extends StatelessWidget {
                           clipBehavior: Clip.antiAliasWithSaveLayer,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
-                            color: Colors.purple.shade100,
+                            color: viewBrain.clrlvl1,
                           ),
                           child: CheckboxListTile(
+                              activeColor: viewBrain.clrlvl3,
+                              checkColor: viewBrain.clrlvl1,
                               controlAffinity: ListTileControlAffinity.leading,
                               title: Text(
                                 viewBrain.taskTitle(index),
