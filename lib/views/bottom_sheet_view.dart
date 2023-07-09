@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:list_todo3/brain/viewModel.dart';
-import 'package:list_todo3/view/task_input_page.dart';
+import 'package:list_todo3/view_model/viewModel.dart';
+import 'package:list_todo3/views/task_input_page.dart';
 import 'package:provider/provider.dart';
 
 class BottomSheetView extends StatelessWidget {

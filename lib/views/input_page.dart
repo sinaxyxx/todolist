@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:list_todo3/view/task_info_view.dart';
-import 'package:list_todo3/view/task_list_view.dart';
+import 'package:list_todo3/views/task_info_view.dart';
+import 'package:list_todo3/views/task_list_view.dart';
 
 import 'bottom_sheet_view.dart';
 import 'header_view.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../brain/viewModel.dart';
+import '../view_model/viewModel.dart';
 
 class TaskListView extends StatelessWidget {
   const TaskListView({super.key});

@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:list_todo3/brain/viewModel.dart';
+import 'package:list_todo3/view_model/viewModel.dart';
 import 'package:provider/provider.dart';
 
-import '../brain/task.dart';
-
-class TaskInputPage extends StatelessWidget {
-  const TaskInputPage({super.key});
+class SettingBottomSheetView extends StatelessWidget {
+  const SettingBottomSheetView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -41,9 +39,7 @@ class TaskInputPage extends StatelessWidget {
                       )),
                   onSubmitted: (value) {
                     if (textController.text.isNotEmpty) {
-                      Task newTask = Task(textController.text, false);
-
-                      viewBrain.addTask(newTask);
+                      viewBrain.changeUser(textController.text);
                       textController.clear();
                     }
                     Navigator.of(context).pop();
