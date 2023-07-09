@@ -19,7 +19,7 @@ class DeleteBottomSheetView extends StatelessWidget {
                     viewBrain.deleteAllTask();
                     Navigator.of(context).pop();
                   },
-                  child: Text('Delete All'),
+                  child: Text('全削除'),
                   style: ElevatedButton.styleFrom(
                       backgroundColor: viewBrain.clrlvl3,
                       foregroundColor: viewBrain.clrlvl2)),
@@ -31,7 +31,7 @@ class DeleteBottomSheetView extends StatelessWidget {
                     viewBrain.deleteCompletedTask();
                     Navigator.of(context).pop();
                   },
-                  child: Text('Delete Completed'),
+                  child: Text('完了済ToDoを全削除'),
                   style: ElevatedButton.styleFrom(
                       backgroundColor: viewBrain.clrlvl3,
                       foregroundColor: viewBrain.clrlvl2)),
