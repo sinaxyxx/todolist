@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:list_todo3/brain/task.dart';
 import 'package:list_todo3/brain/user.dart';
+import 'package:intl/intl.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
 class AppViewBrain extends ChangeNotifier {
   List<Task> tasks = <Task>[];
   User user = User('Youpi');
+
+  String getTodayDate() {
+    initializeDateFormatting('ja');
+    return DateFormat.yMMMMEEEEd('ja').format(DateTime.now()).toString();
+  }
 
   Color clrlvl1 = Colors.grey.shade50;
   Color clrlvl2 = Colors.grey.shade200;

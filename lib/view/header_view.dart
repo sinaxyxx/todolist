@@ -26,7 +26,7 @@ class HeaderView extends StatelessWidget {
                       child: FittedBox(
                           fit: BoxFit.fitHeight,
                           child: Text(
-                            'おかえり！',
+                            '${viewBrain.getTodayDate()}',
                             style: TextStyle(
                                 fontSize: 18,
                                 color: viewBrain.clrlvl4,
@@ -41,7 +41,7 @@ class HeaderView extends StatelessWidget {
                       child: FittedBox(
                           fit: BoxFit.fitHeight,
                           child: Text(
-                            '${viewBrain.username}',
+                            '${viewBrain.username} のToDo',
                             style: TextStyle(
                                 fontSize: 42,
                                 color: viewBrain.clrlvl4,
