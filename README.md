@@ -4,7 +4,7 @@ MY Todo アプリ
 
 # DEMO
 
-(images/Screenshot_1688972363.png)
+![画像の説明](images/Screenshot_1688972363.png)
 
 # Features
 
@@ -23,7 +23,8 @@ intl: ^0.18.1
 
 # Note
 
-##実現したかったこと  
+## 実現したかったこと
+
 ・MVVM 設計  
 ・provider の活用  
 ・日本語での時間表記  
