@@ -4,7 +4,7 @@ MY Todo アプリ
 
 # DEMO
 
-![画像の説明](images/todolist.png)
+![画像の説明](assets/images/todolist.png)
 
 # Features
 
