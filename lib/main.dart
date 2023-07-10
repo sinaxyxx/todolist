@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:list_todo3/brain/viewModel.dart';
+import 'package:list_todo3/view_model/viewModel.dart';
 import 'package:provider/provider.dart';
 
-import 'view/input_page.dart';
+import 'views/input_page.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(

@@ -1,16 +1,38 @@
-# list_todo3
+# Name（リポジトリ/プロジェクト/OSS などの名前）
 
-A new Flutter project.
+MY Todo アプリ
 
-## Getting Started
+# DEMO
 
-This project is a starting point for a Flutter application.
+# Features
 
-A few resources to get you started if this is your first Flutter project:
+・他のデバイスでも確認できるよう共有機能付き
+・日付表示
+・合計と残りの ToDo 数を表記
+・飽きないかつ柔らかい雰囲気のシンプルな UI デザイン
+・ボタンのどこを触れてもチェックのつけ外しが可能
+・名前の変更が可能
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Requirement
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+provider: ^6.0.5
+share_plus: ^7.0.2
+intl: ^0.18.1
+
+# Note
+
+実現したかったこと
+・MVVM 設計
+・provider の活用
+・日本語での時間表記
+・共有機能の実装
+・角を丸くした UI デザイン
+
+# Author
+
+作成者　 Tomomi Shinada
+E-mail sinaxyxx@yahoo.co.jp
+
+# License
+
+This application is under [MIT license]
