@@ -4,6 +4,8 @@ MY Todo アプリ
 
 # DEMO
 
+![Alt text](image.png)
+
 # Features
 
 ・他のデバイスでも確認できるよう共有機能付き
