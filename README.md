@@ -33,8 +33,7 @@ intl: ^0.18.1
 
 # Author
 
-作成者　 Tomomi Shinada
-E-mail sinaxyxx@yahoo.co.jp
+
 
 # License
 
